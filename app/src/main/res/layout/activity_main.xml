@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/grey">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinner1"
+            android:hint="@string/nazwa_firmy_imie_i_nazwisko"
+            android:textAlignment="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/dane"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dane"
+            android:layout_marginTop="5dp"
+            android:text="Ilość"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp"
+            android:id="@+id/iloscT"/>
+
+        <com.google.android.material.slider.Slider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iloscT"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:valueFrom="1"
+            android:valueTo="10"
+            android:stepSize="1"
+            android:id="@+id/iloscS"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iloscS"
+            android:layout_marginTop="5dp"
+            android:text="Dodatki"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp"
+            android:id="@+id/dodatki"/>
+
+        <CheckBox
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_below="@id/dodatki"
+            android:id="@+id/dodatek1"
+            android:text="Myszka"
+            android:textSize="20sp"/>
+
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/dodatek1"/>
+
+        <CheckBox
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_below="@id/spinner2"
+            android:id="@+id/dodatek2"
+            android:text="Klawiatura"
+            android:textSize="20sp"/>
+
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/dodatek2"/>
+
+        <CheckBox
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_below="@id/spinner3"
+            android:id="@+id/dodatek3"
+            android:text="Słuchawki"
+            android:textSize="20sp"/>
+
+        <Spinner
+            android:id="@+id/spinner4"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/dodatek3"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinner4"
+            android:layout_marginTop="5dp"
+            android:text="Cena"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp"
+            android:id="@+id/cena"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cena"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp"
+            android:id="@+id/cenaR"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Zamów"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/cenaR"
+            android:layout_marginBottom="30dp"
+            android:id="@+id/order"/>
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
